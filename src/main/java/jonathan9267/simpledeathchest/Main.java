@@ -7,7 +7,7 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getServer().getPluginManager().registerEvents(new DeathChest(), this);
+        getServer().getPluginManager().registerEvents(new DeathChest(this), this);
     }
 
     @Override
