@@ -73,12 +73,16 @@ public class DeathChest implements Listener {
                 int SecondsUntilDespawn = 120;
                 Long Delay = 20L * SecondsUntilDespawn;
 
+                /*
+                Delaying setting block back to air for SecondsUntilDespawn time.
+                Also removing items in deathchest.
+                 */
+
                 Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
                     @Override
                     public void run() {
                         for (ItemStack i : DeathChestInventory)
                             DeathChestInventory.remove(i);
-
                         DeathLocation.getBlock().setType(Material.AIR);
 
                     }
