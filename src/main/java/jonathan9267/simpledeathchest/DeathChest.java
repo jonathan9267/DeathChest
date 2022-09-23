@@ -34,8 +34,9 @@ public class DeathChest implements Listener {
             if (player.getHealth() <= event.getDamage()) {
 
                 /*
-                Creating DeathChest
+                Creating death chest
                  */
+                
                 Location DeathLocation = player.getLocation();
 
                 /*
