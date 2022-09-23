@@ -1,0 +1,6 @@
+name: Simpledeathchest
+version: '${project.version}'
+main: jonathan9267.simpledeathchest.Simpledeathchest
+api-version: 1.19
+authors: [ jonathan9267 ]
+description: Spawns a death chest when players die
